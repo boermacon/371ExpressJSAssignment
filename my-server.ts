@@ -1,6 +1,9 @@
 import { randomInt } from "crypto";
 import express, { Application, Request, Response } from "express";
+import cors from "cors";
 const app: Application = express();
+app.use(cors());
+
 const PORT = process.env.PORT ?? 8000; // Allow dynamic PORT setting (Heroku)
 
 const words = ["CIGAR", "REBUT", "SISSY", "HUMPH", "AWAKE", "BLUSH", "FOCAL", "EVADE", "NAVAL", "SERVE", "HEATH", "DWARF", "MODEL", "KARMA", "STINK", "GRADE", "QUIET", "BENCH", "ABATE", "FEIGN", "MAJOR", "DEATH", "FRESH", "CRUST", "STOOL", "COLON"]
