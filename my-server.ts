@@ -17,7 +17,7 @@ app.get("/", (req: Request, res: Response) => {
 });*/
 
 app.get("/getWord", (req: Request, res: Response) => {
-    res.header({"Access-Control-Allow-Origin": "*"});
+    //res.header({"Access-Control-Allow-Origin": "*"});
     res.send({ secret: words[Math.floor(Math.random() * words.length)]}); // Opt-4: send JSON response
 });
 
