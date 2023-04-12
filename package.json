@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm install typescript tsc",
-    "serve": "npx ts-node my-server.js"
+    "build": "npm install typescript && tsc",
+    "serve": "node dist/my-server.js"
   },
   "keywords": [],
   "author": "",
