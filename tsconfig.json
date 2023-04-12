@@ -1,7 +1,10 @@
 {
     "compilerOptions": {
         "target": "es6",
+        "module": "commonjs",
+        "rootDir": "./",
         "esModuleInterop": true,
+        "strict": true,
         "outDir": "dist"
     },
     "files": ["my-server.ts"]
